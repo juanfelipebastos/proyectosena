@@ -1,0 +1,41 @@
+.section-admin {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: 35% 50% auto;
+  grid-template-rows: 1fr;
+}
+
+.h2-admin-section {
+  padding: 0;
+  margin: 0;
+  font-family: "Fredoka", sans-serif, "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: bold;
+  justify-self: start;
+  align-self: center;
+  padding-left: 100px;
+}
+
+.img-create-admin {
+  justify-self: end;
+  align-self: center;
+  width: 30px;
+  height: auto;
+  padding-right: 55px;
+  cursor: pointer;
+}
+
+.div-search-product {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.input-search-configuration {
+  width: auto;
+  height: 30px;
+}

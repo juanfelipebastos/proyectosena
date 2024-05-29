@@ -1,0 +1,166 @@
+.section-boy:nth-child(6) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  grid-column: 1/2;
+  grid-row: 1/5;
+  display: grid;
+  grid-template-columns: auto 30% 15% 15% 30% auto;
+  grid-template-rows: 22% 40% 20% auto;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.container-girl {
+  background-color: rgba(255, 255, 255, 0.9);
+  grid-column: 2/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 20% auto;
+  color: black;
+  pointer-events: all;
+}
+
+.container-girl h2:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.container-girl .container-menu-product-girld:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  align-content: stretch;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.container-girl div:nth-child(2) ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-girl h2:nth-child(1):hover {
+  color: rgb(139, 139, 137);
+}
+
+.container-menu-product-girld .container h2:hover {
+  color: black;
+  cursor: default;
+}
+
+.container-menu-product-girld .container:nth-child(2) h2 {
+  margin-left: 15px;
+}
+
+.container-menu-product-girld .container ul {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.container-menu-product-girld .container li:hover {
+  color: rgb(139, 139, 137);
+}
+
+.container-menu-product-girld .container li {
+  padding: 3px;
+}
+
+.container-boy {
+  background-color: rgba(255, 255, 255, 0.9);
+  grid-column: 4/6;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 20% auto;
+  color: black;
+  pointer-events: all;
+}
+
+.container-boy h2:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.container-boy h2:nth-child(1):hover {
+  color: rgb(139, 139, 137);
+}
+
+.container-boy .container-menu-product-boy:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  align-content: stretch;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.container-boy div:nth-child(2) ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-menu-product-boy .container:nth-child(1) {
+  padding-left: 50px;
+}
+
+.container-menu-product-boy .container:nth-child(3) {
+  padding-right: 50px;
+}
+
+.container-menu-product-boy .container h2:hover {
+  color: black;
+  cursor: default;
+}
+
+.container-menu-product-boy .container:nth-child(2) h2 {
+  margin-left: 17px;
+}
+
+.container-menu-product-boy .container ul {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.container-menu-product-boy .container li:hover {
+  color: rgb(139, 139, 137);
+}
+
+.container-menu-product-boy .container li {
+  padding: 3px;
+}
+
+.container-girl.inactive {
+  background-color: transparent;
+}
+
+.container-girl.inactive h2{
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-boy.inactive {
+  background-color: transparent;
+}
+
+.container-boy.inactive h2{
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

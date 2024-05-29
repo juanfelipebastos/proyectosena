@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="invoiceReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="d82aab41-2f5b-484b-91d5-4a9d4481ecef">
+	<property name="template.engine" value="tabular_template"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true">
+		<box>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18">
+		<box>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true">
+		<box>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#9C9C9C">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#FFFFFF"/>
+		</conditionalStyle>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDataset" uuid="33d17738-fbb2-4f29-b2a0-e061896e4ab2">
+		<queryString>
+			<![CDATA[select 1 as numero]]>
+		</queryString>
+		<field name="id" class="java.lang.Long"/>
+		<field name="name" class="java.lang.String"/>
+		<field name="model" class="java.lang.String"/>
+		<field name="price" class="java.lang.Double"/>
+		<field name="totalPrice" class="java.lang.Double"/>
+		<field name="stock" class="java.lang.Integer"/>
+	</subDataset>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="822" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-24" width="230" height="846" forecolor="#666666" backcolor="#112347" uuid="dfcb00fc-8ad8-4868-a527-a80f5a7d143c"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<image>
+					<reportElement x="21" y="30" width="69" height="69" uuid="28530a39-f809-439f-892d-d283d1ac8dba"/>
+					<imageExpression><![CDATA["logo-k.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="90" y="50" width="139" height="47" forecolor="#FFFFFF" uuid="c7887dd0-3366-4a0e-82f9-57cb86543392"/>
+					<textElement>
+						<font fontName="Gill Sans Ultra Bold" size="18"/>
+					</textElement>
+					<text><![CDATA[KARMELSHOES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="90" y="70" width="140" height="30" forecolor="#FFFFFF" uuid="fd4f3281-b4df-469e-9b42-5a721722e6e4"/>
+					<textElement>
+						<font fontName="Arial" size="9"/>
+					</textElement>
+					<text><![CDATA[TU MEJOR CALZADO AQUÍ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="42" y="690" width="95" height="19" forecolor="#FFFFFF" uuid="c8514b0c-252a-43bf-95dc-a8f70b56f2f0"/>
+					<textElement>
+						<font fontName="Arial" size="9"/>
+					</textElement>
+					<text><![CDATA[METODO DE PAGO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="41" y="710" width="95" height="19" forecolor="#FFFFFF" uuid="401c041c-fc9b-4bc2-9269-b21e6048b2fc"/>
+					<textElement>
+						<font fontName="Arial" size="9"/>
+					</textElement>
+					<text><![CDATA[IDENTIFICACION:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="41" y="660" width="188" height="30" forecolor="#21D1CE" uuid="bdaccdf0-dbd1-4035-8991-28341501d1c8"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="11"/>
+					</textElement>
+					<text><![CDATA[INFORMACION DE COMPRA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="40" y="740" width="188" height="30" forecolor="#21D1CE" uuid="0eddbb6f-fd2a-424c-8f09-1e9d4a5fd939"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="11"/>
+					</textElement>
+					<text><![CDATA[TERMINOS & CONDICIONES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="40" y="770" width="170" height="66" forecolor="#FFFFFF" uuid="e459f4fd-7dbf-447d-a3ae-188e61227e5e"/>
+					<textElement textAlignment="Justified">
+						<font fontName="Arial" size="9"/>
+					</textElement>
+					<text><![CDATA[El pago total debe realizarse dentro de los 30 días a partir de la fecha de emisión de esta factura. Los productos entregados son propiedad de KARMELSHOES hasta que se realice el pago completo. Para mas informacion: +57 ##########]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="42" y="630" width="186" height="50" forecolor="#FFFFFF" uuid="f5a92dbe-1909-4275-8198-a55ad4c02bed"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="14"/>
+					</textElement>
+					<text><![CDATA[GRACIAS POR TU COMPRA]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="210" y="-24" width="39" height="846" forecolor="#666666" backcolor="#828282" uuid="0b8923a7-b599-4f22-82e4-bc0e3a553b44"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="70" y="120" width="280" height="100" forecolor="#666666" backcolor="#2FACEB" uuid="11b1ef0d-0be0-45c3-8453-ebea3e706a04"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<staticText>
+					<reportElement x="40" y="10" width="150" height="40" forecolor="#FFFFFF" uuid="850182e1-30b5-4e3a-b1c0-a66b0a578b8f"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="24"/>
+					</textElement>
+					<text><![CDATA[FACTURA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="180" y="10" width="43" height="40" forecolor="#FFFFFF" uuid="75e47d77-b2fe-4089-b86c-18f23a4095c0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="24"/>
+					</textElement>
+					<text><![CDATA[DE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="85" y="40" width="149" height="60" forecolor="#FFFFFF" uuid="e04e44f5-e061-4619-b7be-54b908753764"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Gill Sans Ultra Bold" size="24"/>
+					</textElement>
+					<text><![CDATA[COMPRA]]></text>
+				</staticText>
+			</frame>
+			<componentElement>
+				<reportElement x="70" y="250" width="455" height="59" uuid="e5d00327-d7e2-4e32-8f80-ea2d23e99a9a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="tableDataset" uuid="f5d46b04-673d-4576-9c9e-e78240e3a034">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="50" uuid="e22a3913-5d9d-4f39-bf89-9741e095217d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="acd335bb-4e03-4a54-b0c3-f721bd8f24e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[ID]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="fa73f867-83e2-4da8-b9b1-de0da0c68ec0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="7b5d93b1-11c9-4b25-933e-757788ed1953">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" forecolor="#FFFFFF" uuid="cb6d09c1-286c-46c0-971a-b9b12f07b8bf"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[NOMBRE]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="add4d389-8620-41e1-810d-64919f1b59b2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="7c6699bc-6f7f-4653-adbb-dc4be860b4d1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" forecolor="#FFFFFF" uuid="33cec23a-c274-46df-8108-a60bf29d3e5b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[MODELO]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="3366f968-9021-40cd-91cf-c1b062ae58bc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{model}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="5ca3b55c-3349-49d9-b095-8dcf20db77d6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" forecolor="#FFFFFF" uuid="036e7ec8-4b7e-4caa-a8e3-ceda4178932c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[PRECIO]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="ec37cca2-d2a5-4e2b-a665-b3333d666093"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="8f543f6e-9637-4c86-986a-5f6d5fd41de3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" forecolor="#FFFFFF" uuid="292e9e9e-fff6-4c00-81c4-7bf1cae397d3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[CANTIDAD]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="30" uuid="715d361b-257f-4267-bdd1-3a7d6a18d338"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{totalPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="75" uuid="1ceadf86-4916-44c9-abaa-078ec25cd61f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:tableHeader style="Table_TH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="75" height="30" forecolor="#FFFFFF" uuid="62fc72b3-a20b-421d-8e6b-8b8689dd50b5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="16"/>
+								</textElement>
+								<text><![CDATA[TOTAL]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="75" height="30" uuid="7db356d3-0b1f-45f8-8c75-fc9bbc59f85a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{stock}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="350" y="30" width="80" height="30" forecolor="#030303" uuid="60c38dad-f24a-454d-a903-f24c1b950393"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[FACTURA #]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="50" width="60" height="30" forecolor="#030303" uuid="cc5c4808-52d4-4c2e-908e-c26f98b95302"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="110" width="192" height="30" forecolor="#030303" uuid="43cc7e13-fd39-4b8a-8eba-195ed0d4b849"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[FACTURA A NOMBRE DE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="130" width="195" height="39" forecolor="#030303" uuid="cbfa3bab-ebce-488c-bf1b-82adf1d14421"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[JUAN PABLO LEON FONSECA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="50" width="114" height="30" forecolor="#030303" uuid="0d4c547a-fd70-4b1a-93cc-d2c346bec00a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[22/03/2024]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="30" width="114" height="30" forecolor="#030303" uuid="302f5d05-f242-4ad6-9d73-387bee65b5bc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[0001]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="160" width="195" height="59" forecolor="#636363" uuid="8b826c5a-ed4f-45a6-9fbf-8001e3c63880"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Gill Sans Ultra Bold" size="11"/>
+				</textElement>
+				<text><![CDATA[COLOMBIA, CUCUTA-NORTE DE SANTANDER, CALLE 12B # 17-29, ANIVERSARIO 2]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Top">
+				<reportElement x="340" y="705" width="172" height="76" uuid="b7dc1855-d95f-4a86-b733-96cac92aefc6"/>
+				<imageExpression><![CDATA["img_firma.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="340" y="781" width="172" height="1" uuid="44db2f7f-8098-455a-8cba-1d67b87a4046"/>
+			</line>
+			<staticText>
+				<reportElement x="280" y="782" width="278" height="31" forecolor="#030303" uuid="8617815a-422e-400d-8132-9bdd28292149"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Gill Sans Ultra Bold" size="10"/>
+				</textElement>
+				<text><![CDATA[GABRIEL GARCIA ESTEFARIAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="630" width="70" height="24" forecolor="#030303" uuid="7bb51f34-fdca-41c3-8012-c8d631795675"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Gill Sans Ultra Bold" size="16"/>
+				</textElement>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="340" y="630" width="204" height="1" uuid="e993e630-8614-43b5-84b6-07e67aa51578"/>
+			</line>
+			<textField>
+				<reportElement x="444" y="630" width="100" height="30" uuid="6dad85d8-cb79-485b-b830-2e1346dcb65e"/>
+				<textFieldExpression><![CDATA[$F{totalPriceInvioce}.doubleValue()]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

@@ -1,0 +1,35 @@
+.section-pagination {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.pagination {
+  width: 500px;
+  height: 50px;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.buttom-pagination {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 90px;
+}
+
+.buttom-pagination:hover {
+  background-color: #ddd;
+  border: none;
+  color: black;
+}
+
+.text-span {
+  color: #ddd;
+}

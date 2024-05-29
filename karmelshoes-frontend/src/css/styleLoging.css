@@ -1,0 +1,195 @@
+.main-loging {
+  grid-column: 1/2;
+  grid-row: 1/7;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 35% auto 35%;
+  grid-template-rows: 30% auto 20%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.main-loging .div-loging {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  align-self: end;
+  justify-self: center;
+}
+
+.main-loging .div-loging img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.main-loging .section-loging {
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 20px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 20% 30% 30% 30% 34%;
+}
+
+.section-loging .section-loging-1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: start;
+  align-self: end;
+}
+
+.section-loging .section-loging-1 a img {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.section-loging .input-name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 20% auto;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 1px 5px -5px rgba(0, 0, 0, 0.7),
+    7px 6px 5px -5px rgba(0, 0, 0, 0.7);
+}
+
+.section-loging .input-name label {
+  justify-self: center;
+  align-self: center;
+}
+
+.section-loging .input-name img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.section-loging .input-name input {
+  justify-self: start;
+  align-self: center;
+  border: none;
+  outline: none;
+  width: 95%;
+}
+
+.section-loging .input-name input::placeholder {
+  color: black;
+  padding-left: 20%;
+}
+
+.section-loging .input-password {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 20% auto;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 0px 1px 5px -5px rgba(0, 0, 0, 0.7),
+    7px 6px 5px -5px rgba(0, 0, 0, 0.7);
+}
+
+.section-loging .input-password label {
+  justify-self: center;
+  align-self: center;
+}
+
+.section-loging .input-password img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.section-loging .input-password input {
+  justify-self: start;
+  align-self: center;
+  border: none;
+  outline: none;
+  width: 95%;
+}
+
+.section-loging .input-password input::placeholder {
+  color: black;
+  padding-left: 20%;
+}
+
+.section-loging .input-save-password {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 1fr;
+}
+
+.input-save-password input {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 8%;
+  justify-self: start;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.input-save-password label {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.input-save-password label:hover {
+  color: rgb(129, 129, 129);
+}
+
+.input-save-password a {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  margin-left: 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.input-save-password a:hover h5 {
+  color: rgb(129, 129, 129);
+}
+
+.input-save-password a:visited {
+  color: black;
+}
+
+.section-loging .input-submit {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  background: none;
+  width: 40%;
+  height: 50%;
+  border-radius: 40px;
+  border: 2px solid black;
+  justify-self: center;
+  align-self: center;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.input-loging:-webkit-autofill,
+.input-loging:-webkit-autofill:hover,
+.input-loging:-webkit-autofill:focus,
+.input-loging:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-text-fill-color: #000000 !important;
+}

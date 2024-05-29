@@ -1,0 +1,24 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%);
+}
+
+body {
+  font-family: "Domine", serif, "Courier New", Courier, monospace;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7% 13% 10% 55% auto 10%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "main"
+    "show-product"
+    "footer";
+}

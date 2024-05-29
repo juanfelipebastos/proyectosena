@@ -1,0 +1,161 @@
+.data-product {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+  grid-column: 1/2;
+  grid-row: 1/7;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  grid-template-columns: 8% auto 8%;
+  grid-template-rows: 10% 80% 10%;
+}
+
+.data-product-body {
+  display: grid;
+  background-color: white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 1fr;
+}
+
+.container-form-product {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  width: 100%;
+  height: 90%;
+  margin-top: 20px;
+}
+
+.container-form-input-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 15% 30% auto;
+  row-gap: 30px;
+}
+
+.container-body-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.select-1 {
+  border: none;
+  color: aliceblue;
+  background: black;
+  width: auto;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.select-1 option:hover {
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+.container-body-2 {
+  display: grid;
+  grid-template-columns: 33% 34% auto;
+  padding-top: 10px;
+}
+
+.container-buttom-sizes {
+  display: grid;
+  grid-template-rows: 50% auto;
+  grid-template-columns: 1fr;
+}
+
+.container-buttom-sizes label {
+  justify-self: center;
+}
+
+.container-buttom-sizes button {
+  width: auto;
+  justify-self: center;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-buttom-sizes button:hover {
+  color: rgb(0, 136, 255);
+}
+
+.file {
+  color: rgb(0, 0, 0);
+}
+
+.container-img {
+  display: grid;
+}
+
+.container-img label {
+  color: black;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.custom-file-input input{
+  cursor: pointer;
+}
+
+.container-body-3 {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+}
+
+.container-title-description {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  padding-right: 30px;
+}
+
+.text-area {
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-right: 20px;
+  margin-left: 70px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.container-price {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-body-buttom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttom-delete ,.buttom-create {
+  justify-self: center;
+  align-self: center;
+}
+
+.buttom-delete input, .buttom-create input{
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.buttom-delete input:hover, .buttom-create input:hover{
+  color: rgb(0, 136, 255);
+}

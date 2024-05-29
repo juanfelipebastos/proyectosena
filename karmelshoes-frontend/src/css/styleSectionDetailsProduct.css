@@ -1,0 +1,208 @@
+.section-details-product {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  grid-column: 1/2;
+  grid-row: 1/7;
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: 15% auto 15%;
+  z-index: 100;
+}
+
+.div-details-product {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: auto 65%;
+}
+
+.show-img {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: start;
+  align-items: end;
+}
+
+.imageUrl {
+  width: 100%;
+  height: 100%;
+}
+
+.imageUrl img {
+  border-radius: 10px;
+}
+
+.details-product {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: "Fredoka", sans-serif, "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.head-details-product {
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-template-rows: 50% auto;
+  font-size: 24px;
+  row-gap: 5px;
+  height: 130px;
+}
+
+.head-details-product h2 {
+  justify-self: start;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.head-details-product h3 {
+  justify-self: start;
+  align-self: start;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+}
+
+.arrow {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+  justify-self: end;
+  align-self: start;
+}
+
+.body-head-details-product {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: lighter;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.details-product-container-size-color {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  row-gap: 5px;
+  padding-bottom: 10px;
+}
+
+.details-product-container-size-color h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.padding-top-body-head {
+  padding-top: 50px;
+}
+
+.input-numer-details-product {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.border-top-body-body-details-product {
+  height: 100px;
+  display: grid;
+}
+
+.border-top-body-body-details-product button {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  color: white;
+}
+
+.border-top-body-body-details-product button:hover {
+  color: rgb(139, 139, 139);
+}
+
+.body-body-details-product {
+  display: grid;
+  justify-items: center;
+}
+
+.body-body-details-product p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.3;
+  background-color: rgb(215, 215, 215);
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.message-add-to-shoppingCart {
+  grid-column: 2/3;
+  grid: 1/2;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  padding-bottom: 10px;
+}
+
+.message-add {
+  background-color: rgb(113, 255, 175);
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Fredoka", sans-serif, "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.message-add h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+
+.scale-up-vertical-top {
+  animation: scale-up-vertical-top 0.6s linear;
+}
+@keyframes scale-up-vertical-top {
+  0% {
+    transform: scaleY(0);
+    transform-origin: center top;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: center top;
+  }
+}

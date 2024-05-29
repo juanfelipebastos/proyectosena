@@ -1,0 +1,54 @@
+.sectionWhoWeAre {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color: #fff;
+}
+
+.sectionWhoWeAre h2:nth-child(1){
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+    margin-right: 70px;
+    font-size: 40px;
+
+}
+
+.sectionWhoWeAre h2:nth-child(2){
+    margin: 0;
+    justify-self: center;
+    align-self: end;
+    margin-left: 50px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-size: 40px;
+}
+
+.mainWhoWeAre {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 20% 60% 20%;
+    gap: 10px;
+    color: #fff;
+}
+
+.mainWhoWeAre p:nth-child(1){
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+}
+
+.mainWhoWeAre p:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/4;
+    margin: 0;
+    overflow: hidden; 
+    padding: 10px;
+    font-size: 22px;
+}

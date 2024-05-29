@@ -1,0 +1,57 @@
+.section {
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+}
+
+.section h2:nth-child(1) {
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size: 50px;
+}
+
+.h2-name {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.section a {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.section a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.section a:nth-child(2) {
+  justify-self: start;
+  align-self: start;
+}
+
+.section a:nth-child(3) {
+  justify-self: start;
+  align-self: start;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.img-logo-section {
+  width: 8%;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.img-logo-section img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;  
+}
